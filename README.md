@@ -1,6 +1,7 @@
 # Password Strength Analyzer with Wordlist Generator
 
-🔐 A web-based tool to check password strength in real-time and generate a custom wordlist for password testing, analysis, or training.  
+A web-based tool to check password strength in real-time and generate a custom wordlist for password testing, analysis, or training.  
+
 🌐 [Live App](https://hindustaanisher.github.io/PASStrength-Analyzer/)
 
 ---
