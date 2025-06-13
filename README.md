@@ -19,7 +19,8 @@ A web-based tool to check password strength in real-time and generate a custom w
 
 ## How to Use?
 
-- Open the live demo in your browser.
+- Open the [Live App](https://hindustaanisher.github.io/PASStrength-Analyzer/)
+ in your browser.
 - Type a password to see strength, checklist, and emoji rating.
 - Type a base word to generate a wordlist with symbols, case-swaps, and leetspeak.
 - Download the wordlist or export the password analysis report.
