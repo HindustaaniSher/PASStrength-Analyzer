@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Strength Analyzer ^_^ </title>
+  <link rel="stylesheet" href="style.css" />
+  <button id="themeToggle" onclick="toggleTheme()"style="float: right;">☀️ 🌙 Swith Mode</button>
+</head>
+<body>
+  <div class="container">
+    <h1><center>Password Strength Analyzer 🔐 </center></h1>
+    <input type="text" id="passwordInput" placeholder="Enter Your Password" oninput="analyzePassword()" />
+    <div id="strengthMeter"></div>
+    <p id="strengthText"><span id="strengthIcon"></span> <span id="strengthLabel"></span></p>
+    <ul id="checklist">
+  <li id="digit" class="invalid"> Must Contain Numbers</li>
+  <li id="lower" class="invalid"> Must Contain Lowercase Letters</li>
+  <li id="upper" class="invalid"> Must Contain Uppercase Letters</li>
+  <li id="symbol" class="invalid"> Must Contain Special Characters</li>
+  <li id="length" class="invalid"> Must Contain Atleast 8 Characters</li>
+  <button onclick="exportReport()">📄 Export Analysis Report</button>
+  </ul>
+
+<p style="text-align: center;"> ________________________________________________________________ </p>
+
+
+    <h2><center>Custom Wordlist Generator ^_^ </center></h2>
+    <input type="text" id="baseWord" placeholder="Enter Your Base Word" />
+    <button onclick="generateWordlist()">Generate Wordlist</button>
+    <pre id="wordlistPreview" style="display: none;"></pre>
+
+    <a id="downloadLink" style="display:none;" download="Wordlist.txt">Download Wordlist</a>
+    <h3 style="text-align: right;">By @HindustaaniSher 🦁 </align></h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

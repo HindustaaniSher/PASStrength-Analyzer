@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  padding: 30px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 96%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#strengthMeter {
+  height: 10px;
+  background: #eee;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  transition: width 0.4s ease-in-out;
+}
+
+
+#strengthMeter.active {
+  transition: width 0.3s ease-in-out;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #006eff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0053cc;
+}
+
+/* Force blue buttons even in dark mode */
+body.dark button {
+  background-color: #006eff;
+  color: white;
+}
+
+body.dark button:hover {
+  background-color: #0053cc;
+}
+
+
+#checklist {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+#checklist li {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+#wordlistPreview {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 10px;
+  margin-top: 10px;
+  white-space: pre-wrap;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
+
+#strengthText {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  
+}
+
+body.dark .container {
+  background-color: #2a2a2a;
+}
+
+body.dark input,
+body.dark pre {
+  background-color: #3a3a3a;
+  color: white;
+}
+
+body.dark #strengthMeter {
+  background-color: #444;
+}
+
+body.dark #wordlistPreview {
+  background-color: #3a3a3a;
+  color: #f0f0f0;
+}
