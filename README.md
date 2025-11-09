@@ -32,4 +32,4 @@ A web-based tool to check password strength in real-time and generate a custom w
 ```bash
 git clone https://github.com/HindustaaniSher/PASStrength-Analyzer.git
 cd PASStrength-Analyzer
-open index.html  # or use any browser
+open index.html  # or use any web browser
